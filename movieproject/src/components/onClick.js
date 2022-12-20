@@ -1,5 +1,3 @@
-import React from "react";
-
 const openInNewTab = (url) => {
   window.open(url, "_blank", "noopener,noreferrer");
 };
@@ -10,10 +8,9 @@ function OnClick(props, { visitedMovies, setVisitedMovies }) {
   openInNewTab(`https://www.themoviedb.org/movie/${props.movie.id}`);
   visitedMovies.map((test) => {
     let index = visitedMovies.indexOf(test);
-    if (test.id === props.movie.id) {
-      visitedMovies.splice(index, 1);
-      localStorage.removeItem(test.id);
-    }
+    return test.id === props.movie.id
+      ? visitedMovies.splice(index, 1) && localStorage.removeItem(test.id)
+      : "";
   });
   if (visitedMovies.length < 5) {
     saveToLocalStorage(props.movie.id, props.movie);
