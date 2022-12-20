@@ -27,7 +27,7 @@ function ShowActorMovie({ hideSearch }) {
   let { id } = useParams();
   const { data, loading, error } = useQuery(QUERY_ALL_MOVIES);
   if (loading) {
-    return <h1> DATA IS LOADING...</h1>;
+    return <h3 className="loading"> Loading...</h3>;
   }
   if (error) {
     console.log(error);

@@ -45,7 +45,7 @@ const Testkarusell = ({ visitedMovies, setVisitedMovies, hideSearch }) => {
 
   function output() {
     if (loading) {
-      return <h3>Loading...</h3>;
+      return <h3 className="loading">Loading...</h3>;
     }
     if (Testkarusell) {
       return (

@@ -12,10 +12,6 @@ const Navbar = ({
     e.preventDefault();
   };
 
-  const searchForMovie = () => {
-    console.log("HEJ");
-  };
-
   const updateSearch = () => {
     if (inputref.current.value === " ") {
       setSearchText("");
@@ -89,11 +85,7 @@ const Navbar = ({
                   setSearchTest([searchResults]);
                 }}
               >
-                <button
-                  type="submit"
-                  onClick={searchForMovie}
-                  className="btn btn-warning"
-                >
+                <button type="submit" className="btn btn-warning">
                   Search
                 </button>
               </Link>
