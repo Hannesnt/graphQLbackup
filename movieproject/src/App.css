@@ -1,0 +1,254 @@
+body{
+  background-color:black;
+}
+.hero{
+  
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+
+}
+.heroText{
+  display: flex;
+  color: rgb(224, 196, 36);
+}
+
+.karuseller{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  
+}
+
+.carouselTitle{
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  height: 40px;
+  width: 200px;
+  padding: 5px;
+}
+.carouselImg{
+  height: 350px;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+.carousel-btn{
+  justify-content: center;
+  background-color: black;
+  color: rgb(224, 196, 36);
+}
+.carousel-btn:hover{
+  color: white;
+}
+.voteSpan{
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+}
+.star{
+  margin-right: 10px;
+  margin-top: 3px;
+  color: rgb(224, 196, 36);
+}
+.recently-section{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  color: rgb(224, 196, 36);
+}
+.recently-section img{
+  margin: 0px 20px;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+.resultDiv{
+  position: absolute;
+  right: 10px;
+  background-color: black;
+  width: 300px;
+  border: 1px solid rgb(224, 196, 36);
+  z-index: 1;
+  display: none;
+}
+.resultsPara{
+  text-align: center;
+  padding-top: 5px;
+  color: white;
+} 
+.movieContainer {
+  position: absolute; 
+   z-index: 1; 
+  right: 0px;
+}
+.searchBarInput{
+  overflow-y: scroll;
+  max-height: 400px;
+  right: 0px;
+}
+.searchDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  border: 1px solid rgb(224, 196, 36);
+  margin-right: 10px;
+  width: 300px;
+  cursor: pointer;
+}
+.searchBarInput::-webkit-scrollbar { 
+  display: none;
+}
+.searchedMovies{
+  margin: 20px;
+  height: 600px;
+  align-items: center;
+}
+
+.searchedMoviesTitle{
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  height: 65px;
+  margin: 5px;
+  width: 250px;
+  padding: 5px;
+}
+ .searchImg{
+  width: 80px;
+  margin-top: 10px;
+}
+
+.searchText{
+  color: white;
+} 
+
+.searchedMovieContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.searchedMovieDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px;
+  width: 300px;
+  max-height: 500px;
+  overflow-y: hidden;
+}
+.searchedMovieDiv img{
+  width: 300px;
+  height: 350px;
+}
+
+
+
+.actorPageTitle{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  color: rgb(224, 196, 36);;
+}
+.actorContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.actorDiv{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  align-items: center;
+  color: white;
+  margin: 10px 20px;
+  max-height: 520px;
+
+}
+.actorMovieDiv{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 650px;
+  align-items: center;
+  color: white;
+}
+.actorMovieDiv p{
+  margin-top: 10px;
+}
+
+.actorDiv img {
+  margin: 30px;
+}
+.actorName{
+  height: 100px;
+  text-align: center;
+  margin-top: 10px;
+}
+.actorImg{
+  width: 200px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+.actorContainer{
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.genreDiv{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.genreName{
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  margin: 20px 5px;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding:10px
+}
+a {
+  text-decoration: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
