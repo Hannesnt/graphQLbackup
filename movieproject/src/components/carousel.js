@@ -11,7 +11,7 @@ const genreUrl =
 const url =
   "https://api.themoviedb.org/3/movie/popular?api_key=a84c81299cedd7c0344634dbbe38a768&language=en-US&page=1";
 
-const Testkarusell = ({ visitedMovies, setVisitedMovies, hideSearch }) => {
+const Mainkarusell = ({ visitedMovies, setVisitedMovies, hideSearch }) => {
   const [movies, setMovies] = useState([]);
   const [genres, setGenres] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -47,7 +47,7 @@ const Testkarusell = ({ visitedMovies, setVisitedMovies, hideSearch }) => {
     if (loading) {
       return <h3 className="loading">Loading...</h3>;
     }
-    if (Testkarusell) {
+    if (Mainkarusell) {
       return (
         <>
           <Hero
@@ -109,4 +109,4 @@ const Testkarusell = ({ visitedMovies, setVisitedMovies, hideSearch }) => {
   return output();
 };
 
-export default Testkarusell;
+export default Mainkarusell;

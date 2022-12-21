@@ -1,5 +1,5 @@
 import "./App.css";
-import Testkarusell from "./components/carousel";
+import Mainkarusell from "./components/carousel";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar";
 import { useState, useEffect } from "react";
@@ -71,7 +71,7 @@ function App() {
               path="/"
               exact
               element={
-                <Testkarusell
+                <Mainkarusell
                   visitedMovies={visitedMovies}
                   setVisitedMovies={setVisitedMovies}
                   saveToLocalStorage={saveToLocalStorage}
